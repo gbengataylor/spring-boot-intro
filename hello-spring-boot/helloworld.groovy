@@ -3,7 +3,6 @@ class HelloWorld {
 
 	@RequestMapping("/")
 	String home(){
-		"Hello, World!"
+		"Hello, Gbenga!"
 	}
-
 }

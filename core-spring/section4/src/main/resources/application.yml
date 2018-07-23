@@ -1,0 +1,5 @@
+server:
+  port: 8080
+my:
+  config: Gbenga
+  msg: ${my.config} is the bees
