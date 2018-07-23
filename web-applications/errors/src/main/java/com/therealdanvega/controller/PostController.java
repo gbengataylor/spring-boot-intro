@@ -27,7 +27,7 @@ public class PostController {
 		return "index";
 	}
 	
-	/*
+	/* create global handler instead
 	@ExceptionHandler(Exception.class)
 	public String handleException(HttpServletRequest req, Exception exception, Model model){
 		model.addAttribute("errorMessage", exception.getMessage() );

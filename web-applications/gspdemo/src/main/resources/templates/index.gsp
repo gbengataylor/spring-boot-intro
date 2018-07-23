@@ -6,7 +6,7 @@
 <body>
 
     <h3>Accessing the model</h3>
-    Hello, ${name}.
+    Hello, ${name}. Taylor
 
     <h3>Iteration with a scriptlet</h3>
     <% [1,2,3,4].each { num -> %>
