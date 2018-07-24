@@ -12,9 +12,9 @@
     <% [1,2,3,4].each { num -> %>
     <p><%="#${num}" %></p>
     <%}%>
-
+https://en.wikipedia.org/wiki/Operating_system
     <h3>Iteration with the &lt;each&gt; tag</h3>
-    <g:each in="${[1,2,3]}" var="num">
+    <g:each in="${[1,2,3]}" https://en.wikipedia.org/wiki/Operating_systemvar="num">
         <p>Number ${num}</p>
     </g:each>
 
@@ -30,7 +30,7 @@
     <h3>Rendering a template with a body</h3>
     <g:render template="template_body">
         My template body
-    </g:render>
+    </g:render>https://en.wikipedia.org/wiki/Darwin_(operating_system)
 
     <h3>Applying a layout</h3>
     <g:applyLayout name="sample">
