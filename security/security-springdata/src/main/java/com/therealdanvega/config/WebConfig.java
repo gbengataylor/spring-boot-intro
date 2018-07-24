@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @Configuration
 public class WebConfig extends WebMvcConfigurerAdapter {
 
+	// replace default login with custom login
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		super.addViewControllers(registry);

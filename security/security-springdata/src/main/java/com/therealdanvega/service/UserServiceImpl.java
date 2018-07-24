@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import com.therealdanvega.domain.User;
 import com.therealdanvega.repository.UserRepository;
 
+// UserService that also implements the UserDetailsService to provide the user auth
 @Service
 public class UserServiceImpl implements UserService, UserDetailsService {
 

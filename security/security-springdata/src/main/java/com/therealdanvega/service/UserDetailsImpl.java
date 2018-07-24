@@ -11,6 +11,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import com.therealdanvega.domain.Role;
 import com.therealdanvega.domain.User;
 
+// extend UserDetails and provide user details
 public class UserDetailsImpl implements UserDetails {
 
 	private static final long serialVersionUID = 3185970362329652822L;
@@ -23,6 +24,8 @@ public class UserDetailsImpl implements UserDetails {
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// create a collection of granted authorites
+		// in tthis case it will be our roles
 		Collection<GrantedAuthority> authorities = new HashSet<GrantedAuthority>();
 		Set<Role> roles = user.getRoles();
 		for( Role role : roles ) {
