@@ -27,6 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 			.authorizeRequests()
+				//.antMatchers("/console/**").permitAll() // unsecure H2 database
 				.antMatchers("/admin/**").hasRole("ADMIN") // secrue all /admin for ADMIN role
 				.anyRequest().authenticated()
 				.and()

@@ -39,6 +39,12 @@ public class User {
 	
 	private User() {}
 
+	public User(String email, String password, String fullName) {
+		this.email = email;
+		this.password = password;
+		this.fullName = fullName;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -77,6 +83,12 @@ public class User {
 
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
+	}
+
+	public void addRole(Role role) {
+
+		this.roles.add(role);
+		role.addUser(this);
 	}
 
 	@Override
