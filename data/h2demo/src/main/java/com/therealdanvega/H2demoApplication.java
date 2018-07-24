@@ -19,7 +19,11 @@ public class H2demoApplication {
 
 	@Autowired 
 	PostRepository postRepository;
-	
+
+	/**
+	 * adding this here so that the data gets loaded programatically by DataLoaded and results show up in seePosts
+	 * PostContruct operation below. if not here will still get loaded but may not be part of see posts
+	 */
 	@Autowired
 	DataLoader dataLoader;
 	
@@ -29,6 +33,7 @@ public class H2demoApplication {
     
     @PostConstruct
     void seePosts(){
+    	logger.info("see posts..");
     	for(Post post : postRepository.findAll() ){
     		logger.info(post.toString());
     	}

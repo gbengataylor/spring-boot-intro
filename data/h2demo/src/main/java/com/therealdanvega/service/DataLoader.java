@@ -27,11 +27,11 @@ public class DataLoader {
 	@PostConstruct
 	private void loadData(){
 		// create an author
-		Author dv = new Author("Dan","Vega");
+		Author dv = new Author("Gbenga","Taylor");
 		authorRepository.save(dv);
 		
 		// create a post
-		Post post = new Post("Spring Data Rocks!");
+		Post post = new Post("Spring Data Rocks by Gbenga!");
 		post.setBody("Post Body here...");
 		post.setAuthor(dv);
 		postRepository.save(post);
